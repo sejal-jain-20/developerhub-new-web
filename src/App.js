@@ -12,8 +12,7 @@ import ComingSoon from "./Components/ComingSoon";
 import Aiml from "./Pages/Aiml";
 import NavComponent from "./Components/NavbarComponent";
 import AdminForm from "./Pages/AdminForm";
-import University from "./Components/University";
-import Jobs from "./Pages/Jobs";
+import Forum from "./Components/forum/Forum";
 
 function App() {
   return (
@@ -21,7 +20,6 @@ function App() {
       <NavComponent />
       <Routes>
         <Route path="/" element={<LandingPage />}></Route>
-        <Route path="/job" element={<Jobs />}></Route>
         <Route path="/form" element={<FormBasic />}></Route>
         <Route path="/blockchain" element={<Blockchain />}></Route>
         <Route path="/ar-vr" element={<Ar_vr />}></Route>
@@ -29,9 +27,8 @@ function App() {
         <Route path="/aiml" element={<Aiml />}></Route>
         <Route path="/adminForm" element={<AdminForm />}></Route>
         <Route path="/coming" element={<ComingSoon />}></Route>
-        <Route path="/University" element={<University />}></Route>
+        <Route path="/forum" element={<Forum />}></Route>
       </Routes>
-
       <Footer />
     </div>
   );
